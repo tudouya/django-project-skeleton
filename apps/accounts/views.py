@@ -18,7 +18,6 @@ def login_save(request):
     if 'POST' == request.method:
         username = request.POST['username']
         password = request.POST['password']
-        print request.POST['password']
         user = authenticate(username=username, password=password)
 
         if user and user.is_active:

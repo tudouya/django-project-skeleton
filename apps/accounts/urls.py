@@ -1,12 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
-from django.conf.urls import url
-from views import *
+from django.urls import path
+from . import views
 
 urlpatterns = [
-    url(r'^user_login/', user_login, name="user_login"),
-    url(r'^login_save/', login_save, name="login_save"),
-    url(r'^user_logout/', user_logout, name="user_logout"),
+    path('user_login/', views.user_login, name="user_login"),
+    path('login_save/', views.login_save, name="login_save"),
+    path('user_logout/', views.user_logout, name="user_logout"),
 ]

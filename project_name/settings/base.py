@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Django settings for {{ project_name }} project.
+Django settings for testaa project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
@@ -26,7 +26,7 @@ MANAGERS = ADMINS
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '{{ secret_key }}'
+SECRET_KEY = '=@vemt%6d9j+q8!b$)i-q%y@xv@yp^fyczvkk294+efr0uc=za'
 
 # DATABASES = {
 #     'default': {
@@ -57,9 +57,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = '{{ project_name }}.urls'
+ROOT_URLCONF = 'testaa.urls'
 
-WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
+WSGI_APPLICATION = 'testaa.wsgi.application'
 
 
 # Internationalization

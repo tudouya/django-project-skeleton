@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from django.urls import path
+from . import views
 
-from django.conf.urls import url
-from views import *
 
 urlpatterns = [
-    url(r'^index/', index, name="example_index"),
+    path('index', views.index, name="example_index"),
 ]
